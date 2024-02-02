@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>price tag</title>
+	<style>
+		div
+		{
+			background:#ffca28;
+			width:200px;
+			height: 400px;
+			position: relative;
+			margin: 100px auto;
+			overflow: hidden;
+		}
+		div>img
+		{
+			position: absolute;
+			width: inherit;
+			height:inherit;
+		}
+		div>#price
+		{
+			position: absolute;
+			height:85px;
+			top: 215px;
+			opacity: 0;
+			transition: opacity 0.3s ease;
+
+		}
+		div:hover>img
+		{
+			transform: translatey(-80px);
+		}
+		div:hover>#price
+		{
+			opacity: 1;
+		}
+	</style>
+
+</head>
+<body>
+	<div>
+		<img src="dress.jpg">
+		<div id="price">
+			<ol>
+				<li>ajio</li>
+				<li>899.00</li>
+				<li>mustard yellow</li>
+			</ol>
+		</div>
+	</div>
+</body>
+</html>
